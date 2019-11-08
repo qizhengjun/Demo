@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Carson_Ho</title>
+
+    // JS代码
+    <script>
+// Android需要调用的方法
+   function AndroidcallJS(){
+      alert("Android调用了JS的AndroidcallJS方法");
+   }
+   function show(arg){
+    document.getElementById("input1").value = arg;
+    alert("触发了onclick事件！");
+    }
+    function aa(url){
+    var img=document.getElementById("img");
+    img.src=url;
+    }
+    </script>
+
+<body>
+<div id="content">显示内容</div><br>
+<input id="input1"></input><br>
+<button style="width:100px;height:50px;backgroud:red" onclick="window.android.startFunction()">方法</button><br>
+<img id="img" style="width:200px;height:200px"/>
+</body>
+
+</head>
+
+</html>
